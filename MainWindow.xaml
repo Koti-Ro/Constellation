@@ -1,0 +1,26 @@
+﻿<Window x:Class="Constellation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Constellation"
+        mc:Ignorable="d"
+        Title="Ресторан «Созвездие»" Height="450" Width="800">
+    <Grid>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE37302" Offset="1"/>
+                    <GradientStop Color="#FF151F44" Offset="0"/>
+                    <GradientStop Color="#FFA63A67" Offset="0.228"/>
+                    <GradientStop Color="#FFFFD65F" Offset="0.63"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="680,10,0,0" VerticalAlignment="Top" Width="100">
+            <Border.Background>
+                <ImageBrush ImageSource="/лого.png"/>
+            </Border.Background>
+        </Border>
+    </Grid>
+</Window>
